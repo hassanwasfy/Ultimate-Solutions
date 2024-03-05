@@ -71,11 +71,13 @@ dependencies {
     annotationProcessor(libs.hiltCompiler)
 
     implementation(libs.rxJava)
+    implementation(libs.rxAndroid)
 
     implementation(libs.retrofit)
     implementation(libs.retrofitAdapter)
     implementation(libs.retrofitConverter)
     implementation(libs.gson)
     implementation(platform(libs.okHttp))
+    implementation(libs.interceptor)
 
 }
