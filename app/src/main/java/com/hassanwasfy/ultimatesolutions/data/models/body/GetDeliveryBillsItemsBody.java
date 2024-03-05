@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class GetDeliveryBillsItemsBody {
     @SerializedName("P_DLVRY_NO")
-    private String langNumber;
+    private String deliveryNumber;
 
     @SerializedName("P_LANG_NO")
     private String languageNumber;
@@ -15,23 +15,23 @@ public class GetDeliveryBillsItemsBody {
     private String processedFlag;
 
     public GetDeliveryBillsItemsBody(
-            String langNumber,
+            String deliveryNumber,
             String languageNumber,
             String billSerialNumber,
             String processedFlag
     ) {
-        this.langNumber = langNumber;
+        this.deliveryNumber = deliveryNumber;
         this.languageNumber = languageNumber;
         this.billSerialNumber = billSerialNumber;
         this.processedFlag = processedFlag;
     }
 
-    public String getLangNumber() {
-        return langNumber;
+    public String getDeliveryNumber() {
+        return deliveryNumber;
     }
 
-    public void setLangNumber(String langNumber) {
-        this.langNumber = langNumber;
+    public void setDeliveryNumber(String deliveryNumber) {
+        this.deliveryNumber = deliveryNumber;
     }
 
     public String getLanguageNumber() {

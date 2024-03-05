@@ -4,11 +4,14 @@ import com.google.gson.annotations.SerializedName;
 
 public class BaseResponse<ResponseType> {
 
-    @SerializedName("Date")
+    @SerializedName("Data")
     private ResponseType responseDate;
 
     @SerializedName("Result")
     private ResponseResult responseResult;
+
+    public BaseResponse() {
+    }
 
     public BaseResponse(ResponseType responseDate, ResponseResult responseResult) {
         this.responseDate = responseDate;
