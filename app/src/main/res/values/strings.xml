@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">UltimateSolutions</string>
+    <string name="app_name">Ultimate Solutions</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="log_back_hint">Log back into your account</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="show_more">Show More</string>
+    <string name="show_less">Show Less</string>
+    <string name="login_label">Log in</string>
+    <string name="year">Year</string>
+    <string name="financial_unit">Financial Unit</string>
+    <string name="branch_number">Branch Number</string>
+    <string name="no_orders_header">No Orders yet</string>
+    <string name="no_orders_sub_header">You don\'t have any orders in your history.</string>
+    <string name="label_new">New</string>
+    <string name="label_others">Others</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_order_status">Order Status</string>
+    <string name="label_order_date">Order Date</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_apply">Apply</string>
+    <string name="label_lang_ar">Arabic</string>
+    <string name="label_lang_en">English</string>
+    <string name="label_lang_fr">French</string>
+    <string name="label_lang_tu">Turkish</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_en">English</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_tu">Türkçe</string>
+    <string name="label_choose_lang">Choose Your Preferred Language</string>
 </resources>

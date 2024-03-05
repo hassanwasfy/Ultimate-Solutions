@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Ultimate Solutions</string>
+	<string name="welcome_back">Content de te revoir!</string>
+	<string name="log_back_hint">Reconnectez-vous à votre compte</string>
+	<string name="user_id">ID de l\"utilisateur</string>
+	<string name="password">Mot de passe</string>
+	<string name="show_more">Montre plus</string>
+	<string name="show_less">Montrer moins</string>
+	<string name="login_label">Se connecter</string>
+	<string name="year">année</string>
+	<string name="financial_unit">Unité financière</string>
+	<string name="branch_number">Numéro de la succursale</string>
+	<string name="no_orders_header">Aucune commande pour l\'instant</string>
+	<string name="no_orders_sub_header">Vous n\'avez aucune commande dans votre historique.</string>
+	<string name="label_new">Nouveau</string>
+	<string name="label_others">Autres</string>
+	<string name="label_filter">Filtre</string>
+	<string name="label_order_status">Statut de la commande</string>
+	<string name="label_order_date">Date de commande</string>
+	<string name="label_from">Depuis</string>
+	<string name="label_to">À</string>
+	<string name="label_cancel">Annuler</string>
+	<string name="label_apply">Appliquer</string>
+	<string name="label_lang_ar">arabe</string>
+	<string name="label_lang_en">Anglais</string>
+	<string name="label_lang_fr">Français</string>
+	<string name="label_lang_tu">turc</string>
+	<string name="lang_ar">العربية</string>
+	<string name="lang_en">English</string>
+	<string name="lang_fr">Français</string>
+	<string name="lang_tu">Türkçe</string>
+	<string name="label_choose_lang">Choisissez votre langue préférée</string>
+</resources>

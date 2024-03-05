@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ultimate Solutions</string>
+    <string name="welcome_back">Tekrar hoşgeldiniz!</string>
+    <string name="log_back_hint">Hesabınıza tekrar giriş yapın</string>
+    <string name="user_id">Kullanıcı kimliği</string>
+    <string name="password">Şifre</string>
+    <string name="show_more">Daha fazla göster</string>
+    <string name="show_less">Daha az göster</string>
+    <string name="login_label">Giriş yapmak</string>
+    <string name="year">Yıl</string>
+    <string name="financial_unit">Finansal birim</string>
+    <string name="branch_number">Şube numarası</string>
+    <string name="no_orders_header">Henüz sipariş yok</string>
+    <string name="no_orders_sub_header">Tarihinizde herhangi bir emiriniz yok.</string>
+    <string name="label_new">Yeni</string>
+    <string name="label_others">Diğerleri</string>
+    <string name="label_filter">Filtre</string>
+    <string name="label_order_status">Sipariş durumu</string>
+    <string name="label_order_date">Sipariş tarihi</string>
+    <string name="label_from">İtibaren</string>
+    <string name="label_to">İle</string>
+    <string name="label_cancel">İptal etmek</string>
+    <string name="label_apply">Uygula</string>
+    <string name="label_lang_ar">Arapça</string>
+    <string name="label_lang_en">İngilizce</string>
+    <string name="label_lang_fr">Fransızca</string>
+    <string name="label_lang_tu">Türkçe</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_en">English</string>
+    <string name="lang_fr">Français</string>
+    <string name="lang_tu">Türkçe</string>
+    <string name="label_choose_lang">Tercih ettiğiniz dili seçin</string>
+</resources>
