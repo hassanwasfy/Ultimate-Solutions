@@ -1,29 +1,27 @@
 package com.hassanwasfy.ultimatesolutions.presentation.base;
 
 import android.os.Bundle;
-
+import androidx.annotation.LayoutRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 
-public abstract class BaseActivity<VDB extends ViewDataBinding> extends AppCompatActivity {
+public abstract class BaseActivity<T extends ViewDataBinding, V extends ViewModel> extends AppCompatActivity {
 
-    protected abstract int getLayoutIdFragment();
-    protected abstract ViewModel getViewModel();
+    protected T binding;
+    protected V viewModel;
 
-    private VDB binding;
+    @LayoutRes
+    protected abstract int getLayoutId();
 
-    protected VDB getBinding() {
-        return binding;
-    }
-
+    protected abstract Class<V> getViewModelClass();
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, getLayoutIdFragment());
-        binding.setLifecycleOwner(this);
-        //binding.setVariable(BR.viewModel, getViewModel());
+        binding = DataBindingUtil.setContentView(this, getLayoutId());
+        viewModel = new ViewModelProvider(this).get(getViewModelClass());
     }
 }
