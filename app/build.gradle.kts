@@ -30,6 +30,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    buildFeatures{
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -40,4 +44,25 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    implementation(libs.savedstate)
+    implementation(libs.lifecycleViewmodel)
+    implementation(libs.livedata)
+    implementation(libs.lifecycleService)
+    implementation(libs.lifeDataTesters)
+    implementation(libs.appLifecycle)
+    implementation(libs.lifecycleRuntime)
+    annotationProcessor(libs.lifecycleAnnotation)
+
+    implementation(libs.hiltAndroid)
+    annotationProcessor(libs.hiltCompiler)
+
+    implementation(libs.rxJava)
+
+    implementation(libs.retrofit)
+    implementation(libs.retrofitAdapter)
+    implementation(libs.retrofitConverter)
+    implementation(libs.gson)
+    implementation(platform(libs.okHttp))
+
 }
