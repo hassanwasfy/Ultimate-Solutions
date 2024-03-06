@@ -10,8 +10,7 @@ import com.hassanwasfy.ultimatesolutions.data.models.dto.DeliveryBillsResponse;
 import com.hassanwasfy.ultimatesolutions.data.models.dto.DeliveryNameResponse;
 import com.hassanwasfy.ultimatesolutions.data.models.dto.DeliveryStatusTypesResponse;
 import com.hassanwasfy.ultimatesolutions.data.models.dto.UpdateDeliveryBillStatusResponse;
-
-import io.reactivex.rxjava3.core.Single;
+import io.reactivex.rxjava3.core.Observable;
 import retrofit2.Response;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
@@ -19,22 +18,22 @@ import retrofit2.http.POST;
 public interface ApiService {
 
     @POST("CheckDeliveryLogin")
-    Response<Single<BaseResponse<DeliveryNameResponse>>> performDeliveryLoginCheck(
+    Observable<Response<BaseResponse<DeliveryNameResponse>>> performDeliveryLoginCheck(
             @Body BaseRequestBody<CheckDeliveryLoginBody> checkDeliveryLoginBody
     );
 
     @POST("GetDeliveryBillsItems")
-    Response<Single<BaseResponse<DeliveryBillsResponse>>> performBillItemsRequest(
+    Observable<Response<BaseResponse<DeliveryBillsResponse>>> performBillItemsRequest(
             @Body BaseRequestBody<GetDeliveryBillsItemsBody> getDeliveryBillsItemsBody
     );
 
     @POST("GetDeliveryStatusTypes")
-    Response<Single<BaseResponse<DeliveryStatusTypesResponse>>> performBillTypesRequest(
+    Observable<Response<BaseResponse<DeliveryStatusTypesResponse>>> performBillTypesRequest(
             @Body BaseRequestBody<GetDeliveryStatusTypesBody> getDeliveryStatusTypesBody
     );
 
     @POST("UpdateDeliveryBillStatus")
-    Response<Single<BaseResponse<UpdateDeliveryBillStatusResponse>>> performUpdateDeliveryRequest(
+    Observable<Response<BaseResponse<UpdateDeliveryBillStatusResponse>>> performUpdateDeliveryRequest(
             @Body BaseRequestBody<UpdateDeliveryBillStatusBody> getDeliveryStatusTypesBody
     );
 
