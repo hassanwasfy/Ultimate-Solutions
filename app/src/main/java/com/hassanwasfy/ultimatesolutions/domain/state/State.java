@@ -1,7 +1,7 @@
 package com.hassanwasfy.ultimatesolutions.domain.state;
 
-public abstract class State {
-    public static class Success<T> extends State {
+public abstract class State<T> {
+    public static class Success<T> extends State<T> {
         private final T data;
 
         public Success(T data) {
