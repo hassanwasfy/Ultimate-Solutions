@@ -1,21 +1,22 @@
 package com.hassanwasfy.ultimatesolutions.data.models.dto;
 
 import com.google.gson.annotations.SerializedName;
-import java.util.List;
+
+import java.util.ArrayList;
 
 public class DeliveryBillsResponse {
     @SerializedName("DeliveryBills")
-    private List<BillItemResponse> deliveryBills;
+    private ArrayList<BillItemResponse> deliveryBills;
 
-    public DeliveryBillsResponse(List<BillItemResponse> deliveryBills) {
+    public DeliveryBillsResponse(ArrayList<BillItemResponse> deliveryBills) {
         this.deliveryBills = deliveryBills;
     }
 
-    public List<BillItemResponse> getDeliveryBills() {
+    public ArrayList<BillItemResponse> getDeliveryBills() {
         return deliveryBills;
     }
 
-    public void setDeliveryBills(List<BillItemResponse> deliveryBills) {
+    public void setDeliveryBills(ArrayList<BillItemResponse> deliveryBills) {
         this.deliveryBills = deliveryBills;
     }
 }
