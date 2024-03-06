@@ -8,11 +8,13 @@ material = "1.11.0"
 constraintlayout = "2.1.4"
 lifecycle_version = "2.7.0"
 arch_version = "2.2.0"
-hiltAndroid = "2.51"
+hiltAndroid = "2.44"
 rxJava = "3.1.8"
 gson = "2.10.1"
 retrofit = "2.9.0"
 okHttp = "4.12.0"
+rxandroid = "3.0.2"
+interceptor = "4.12.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -32,12 +34,13 @@ lifecycleRuntime = { group = "androidx.lifecycle", name = "lifecycle-runtime", v
 hiltAndroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
 hiltCompiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroid" }
 rxJava = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxJava" }
+rxAndroid = { group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxandroid" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofitAdapter = { group = "com.squareup.retrofit2", name = "adapter-rxjava3", version.ref = "retrofit" }
 retrofitConverter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 okHttp = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okHttp" }
-
+interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "interceptor" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
