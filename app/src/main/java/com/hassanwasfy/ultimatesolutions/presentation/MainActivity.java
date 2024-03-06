@@ -1,8 +1,10 @@
-package com.hassanwasfy.ultimatesolutions;
+package com.hassanwasfy.ultimatesolutions.presentation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.hassanwasfy.ultimatesolutions.R;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
