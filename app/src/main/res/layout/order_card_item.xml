@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:shadowColor="@color/black"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view_color_indicator_color"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/vivid_green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.15" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_order_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/label_order_details_mark"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_color_indicator_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/view_color_indicator_color"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_label_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/text_date_value"
+                app:layout_constraintEnd_toEndOf="@id/text_date_value"
+                app:layout_constraintStart_toStartOf="@id/text_date_value" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="1/1/2020"
+                android:textAlignment="center"
+                android:textColor="@color/dark_turquoise"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/view_color_indicator_color"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6" />
+
+
+            <View
+                android:id="@+id/view_section_1"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/silver"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_date_value"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_label_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/total_price"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/text_price_value"
+                app:layout_constraintEnd_toEndOf="@id/text_price_value"
+                app:layout_constraintStart_toStartOf="@id/text_price_value" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+
+                android:gravity="center"
+                android:text="400 LE"
+                android:textAlignment="center"
+                android:textColor="@color/dark_turquoise"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/view_section_1"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <View
+                android:id="@+id/view_section_2"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintHorizontal_weight="2"
+                android:background="@color/silver"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_label_total_price"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_label_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/label_status"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/text_status_value"
+                app:layout_constraintEnd_toEndOf="@id/text_status_value"
+                app:layout_constraintStart_toStartOf="@id/text_status_value" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_status_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="New"
+                android:textAlignment="center"
+                android:textColor="@color/vivid_green"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/view_section_2"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_lebel_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="#1569987"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

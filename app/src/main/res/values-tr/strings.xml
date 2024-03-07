@@ -31,4 +31,8 @@
     <string name="lang_fr">Français</string>
     <string name="lang_tu">Türkçe</string>
     <string name="label_choose_lang">Tercih ettiğiniz dili seçin</string>
+    <string name="label_order_details_mark">Detaylar</string>
+    <string name="date">Tarih</string>
+    <string name="total_price">Total price</string>
+    <string name="label_status">Status</string>
 </resources>

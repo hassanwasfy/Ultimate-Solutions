@@ -16,6 +16,7 @@ public class HeaderInterceptor implements Interceptor {
     public Response intercept(Chain chain) throws IOException {
         Request originalRequest = chain.request();
         Request newRequest = originalRequest.newBuilder()
+                .addHeader("Content-Type", "application/json")
                 .build();
         return chain.proceed(newRequest);
     }

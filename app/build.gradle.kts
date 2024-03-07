@@ -5,6 +5,7 @@ import org.gradle.api.JavaVersion
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.hiltAndroid)
+    alias(libs.plugins.safeArgs)
 }
 
 android {
@@ -80,5 +81,12 @@ dependencies {
     implementation(libs.gson)
     implementation(platform(libs.okHttp))
     implementation(libs.interceptor)
+
+    implementation(libs.navigationFragment)
+    implementation(libs.navigationUi)
+    androidTestImplementation(libs.navigationTest)
+    implementation(libs.navigatinoFeatures)
+
+
 
 }
