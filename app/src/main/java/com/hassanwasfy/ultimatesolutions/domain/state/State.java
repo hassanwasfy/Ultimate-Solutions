@@ -1,7 +1,9 @@
 package com.hassanwasfy.ultimatesolutions.domain.state;
 
 public abstract class State<T> {
-    public static class Success<T> extends State<T> {
+
+
+    public static final class Success<T> extends State<T> {
         private final T data;
 
         public Success(T data) {
@@ -13,23 +15,23 @@ public abstract class State<T> {
         }
     }
 
-    public static class Error extends State {
-        private final String message;
+    public static final class Loading<T> extends State<T> {
+        public Loading() {}
 
-        public Error(String message) {
-            this.message = message;
-        }
-
-        public String getMessage() {
-            return message;
+        public static <T> Loading<T> getInstance() {
+            return new Loading<>();
         }
     }
 
-    public static class Loading extends State {
-        private Loading() {}
+    public static final class Error<T> extends State<T> {
+        private final String errorMessage;
 
-        public static Loading getInstance() {
-            return new Loading();
+        public Error(String errorMessage) {
+            this.errorMessage = errorMessage;
+        }
+
+        public String getErrorMessage() {
+            return errorMessage;
         }
     }
 }

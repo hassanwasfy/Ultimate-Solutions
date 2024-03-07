@@ -30,4 +30,9 @@
     <string name="lang_fr">Français</string>
     <string name="lang_tu">Türkçe</string>
     <string name="label_choose_lang">Choose Your Preferred Language</string>
+    <string name="label_order_details_mark">Order\nDetails\n&gt;</string>
+    <string name="date">Date</string>
+    <string name="total_price">Total price</string>
+    <string name="label_status">Status</string>
+
 </resources>

@@ -20,4 +20,6 @@
     <color name="forest_green">#39A238</color>
     <color name="dark_sapphire_blue">#0A3F8F</color>
     <color name="dark_blue_opacity_30">#00004D</color>
+    <color name="fire_brick">#a91a0c</color>
+    <color name="light_red">#f2bdb5</color>
 </resources>
