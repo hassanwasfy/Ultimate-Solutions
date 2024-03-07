@@ -1,6 +1,10 @@
+import java.util.Properties
+import org.gradle.api.JavaVersion
+
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidApplication)
+    alias(libs.plugins.hiltAndroid)
 }
 
 android {
@@ -33,7 +37,17 @@ android {
 
     buildFeatures{
         dataBinding = true
+        buildConfig = true
     }
+
+
+    val properties = Properties()
+    properties.load(project.rootProject.file("local.properties").inputStream())
+    defaultConfig {
+        buildConfigField("String" , "BASE_URL", "\"${properties.getProperty("BASE_URL")}\"")
+    }
+
+
 }
 
 dependencies {
@@ -58,11 +72,13 @@ dependencies {
     annotationProcessor(libs.hiltCompiler)
 
     implementation(libs.rxJava)
+    implementation(libs.rxAndroid)
 
     implementation(libs.retrofit)
     implementation(libs.retrofitAdapter)
     implementation(libs.retrofitConverter)
     implementation(libs.gson)
     implementation(platform(libs.okHttp))
+    implementation(libs.interceptor)
 
 }
