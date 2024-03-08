@@ -42,14 +42,14 @@ public class HomeViewModel extends ViewModel {
                             HomeDataHolder newValue = stateLiveData.getValue();
                             assert newValue != null;
                             newValue.setDeliveryBills(data.getDeliveryBills());
-                            stateLiveData.setValue(newValue);
+                            stateLiveData.postValue(newValue);
                         },
                         error -> {
                             HomeDataHolder newValue = stateLiveData.getValue();
                             assert newValue != null;
                             newValue.setError(true);
                             newValue.setErrorMessage(error.getMessage());
-                            stateLiveData.setValue(newValue);
+                            stateLiveData.postValue(newValue);
                         }
                 );
     }
