@@ -34,5 +34,8 @@
     <string name="date">Date</string>
     <string name="total_price">Total price</string>
     <string name="label_status">Status</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="orders_delivery">Orders Delivery</string>
 
 </resources>
