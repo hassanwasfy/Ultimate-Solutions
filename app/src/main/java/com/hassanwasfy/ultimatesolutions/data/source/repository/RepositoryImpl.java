@@ -23,17 +23,9 @@ public class RepositoryImpl implements Repository {
         this.remoteDataSource = remoteDataSource;
         this.loginSharedPrefs = loginSharedPrefs;
     }
-    
-    @Inject
-
-
 
     @Override
-    public Observable<DeliveryName> performDeliveryLoginCheck(
-            String languageNumber,
-            String deliveryNumber,
-            String password
-    ) {
+    public Observable<DeliveryName> performDeliveryLoginCheck(String languageNumber, String deliveryNumber, String password) {
         return remoteDataSource.performDeliveryLoginCheck(languageNumber, deliveryNumber, password);
     }
 

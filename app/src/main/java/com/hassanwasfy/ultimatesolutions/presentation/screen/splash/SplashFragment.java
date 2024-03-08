@@ -37,7 +37,7 @@ public class SplashFragment extends Fragment {
 
     @SuppressLint("CheckResult")
     private void checkLogin() {
-       repository.getLoginStatus().subscribeOn(Schedulers.io())
+       /*repository.getLoginStatus().subscribeOn(Schedulers.io())
                .observeOn(AndroidSchedulers.mainThread())
                .subscribe(
                        status -> {
@@ -52,7 +52,7 @@ public class SplashFragment extends Fragment {
                        error -> {
 
                        }
-               );
+               );*/
     }
 
     @Override
