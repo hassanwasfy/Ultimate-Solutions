@@ -38,4 +38,7 @@ public interface Repository {
     Observable<DeliveryUpdate> performUpdateDeliveryRequest(
             String languageNumber, String billSerial, String deliveryStatusFlag, String reason
     );
+
+    Single<Boolean> getLoginStatus();
+    void setLoginStatus(Boolean value);
 }
